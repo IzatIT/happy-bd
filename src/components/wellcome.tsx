@@ -1,17 +1,18 @@
 import {AppParticles} from "./particles.tsx";
 import { v4 as uuidv4 } from 'uuid';
 import {AppCarousel} from "./cariousel/carousel.tsx";
-import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
 import "./wellcome.css"
+import {MusicPlayer} from "./music.tsx";
+
 const slides = [
     {
         key: uuidv4(),
-        content: <img src="/albina/1.png" alt="1" />
+        content: <img src="/albina/2.png" alt="1" />
     },
     {
         key: uuidv4(),
-        content: <img src="/albina/2.png" alt="1" />
+        content: <img src="/albina/1.png" alt="1" />
     },
     {
         key: uuidv4(),
@@ -80,16 +81,7 @@ export const Wellcome = () => {
                     showArrows={false}
                 />
             </div>
-            <div style={{position: "relative", zIndex: 9999 }}>
-                <AudioPlayer
-                    style={{
-                        background: "none",
-                        color: "white"
-                    }}
-                    autoPlay={true}
-                    src="/music/jarmashyp.mp3"
-                />
-            </div>
+            <MusicPlayer/>
         </div>
     );
 };
