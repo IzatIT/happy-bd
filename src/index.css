@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 0 0 40px 0;
+  background: #1d1414;
+  width: 100vw;
+  overflow-x: hidden;
+}
+a, a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+* {
+  font-family: "Manrope", serif;
+  font-optical-sizing: auto;
+}
